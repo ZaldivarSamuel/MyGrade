@@ -23,6 +23,8 @@ class HomeViewController: UIViewController{
    
         let newClassViewController = NewClassViewController()
         
-        self.present(newClassViewController, animated: true, completion: nil)
+        let navigationController = UINavigationController(rootViewController: newClassViewController)
+        
+        self.present(navigationController, animated: true, completion: nil)
     }
 }

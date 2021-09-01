@@ -10,10 +10,12 @@ import UIKit
 
 class NewClassView: UIView{
     
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.backgroundColor = .blue
+        self.backgroundColor = .white
+        
     }
     
     required init?(coder: NSCoder) {
