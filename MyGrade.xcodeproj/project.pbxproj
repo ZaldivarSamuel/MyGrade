@@ -13,6 +13,8 @@
 		7E3DBA3A26DF1F6000ACFA2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3DBA3826DF1F6000ACFA2F /* LaunchScreen.storyboard */; };
 		7E3DBA4226DF206300ACFA2F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA4126DF206300ACFA2F /* HomeViewController.swift */; };
 		7E3DBA4626DF29F000ACFA2F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA4526DF29F000ACFA2F /* HomeView.swift */; };
+		7E3DBA4826DFF55300ACFA2F /* NewClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA4726DFF55300ACFA2F /* NewClassViewController.swift */; };
+		7E3DBA4A26DFF57000ACFA2F /* NewClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA4926DFF57000ACFA2F /* NewClassView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7E3DBA3B26DF1F6000ACFA2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E3DBA4126DF206300ACFA2F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7E3DBA4526DF29F000ACFA2F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7E3DBA4726DFF55300ACFA2F /* NewClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClassViewController.swift; sourceTree = "<group>"; };
+		7E3DBA4926DFF57000ACFA2F /* NewClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClassView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				7E3DBA4526DF29F000ACFA2F /* HomeView.swift */,
+				7E3DBA4926DFF57000ACFA2F /* NewClassView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -79,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				7E3DBA4126DF206300ACFA2F /* HomeViewController.swift */,
+				7E3DBA4726DFF55300ACFA2F /* NewClassViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -156,6 +162,8 @@
 				7E3DBA4626DF29F000ACFA2F /* HomeView.swift in Sources */,
 				7E3DBA3026DF1F5C00ACFA2F /* SceneDelegate.swift in Sources */,
 				7E3DBA4226DF206300ACFA2F /* HomeViewController.swift in Sources */,
+				7E3DBA4A26DFF57000ACFA2F /* NewClassView.swift in Sources */,
+				7E3DBA4826DFF55300ACFA2F /* NewClassViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
