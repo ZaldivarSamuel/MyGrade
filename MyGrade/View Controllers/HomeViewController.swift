@@ -15,11 +15,11 @@ class HomeViewController: UIViewController{
         let homeView = HomeView()
         self.view = homeView
         
-        homeView.newClassButton.addTarget(self, action: #selector(self.buttonAction(_:)), for: .touchUpInside)
+        homeView.newClassButton.addTarget(self, action: #selector(self.newClassButtonPressed(_:)), for: .touchUpInside)
        
     }
        
-    @objc func buttonAction(_ sender:UIButton!){
+    @objc func newClassButtonPressed(_ sender:UIButton!){
         print("Button tapped")
     }
 }

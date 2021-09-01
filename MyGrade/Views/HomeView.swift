@@ -23,10 +23,12 @@ class HomeView: UIView{
         newClassButton.setTitle("New Class", for: .normal)
         newClassButton.setTitleColor(.systemBlue, for: .normal)
         newClassButton.setTitleColor(.systemFill, for: .highlighted)
-        
-        
+    
         self.addSubview(newClassButton)
-        
+        setConstraints()
+    }
+    
+    private func setConstraints(){
         newClassButton.translatesAutoresizingMaskIntoConstraints = false
         newClassButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
         newClassButton.heightAnchor.constraint(equalToConstant: 75).isActive = true
