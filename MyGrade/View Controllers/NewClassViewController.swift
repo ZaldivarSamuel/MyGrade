@@ -10,4 +10,11 @@ import UIKit
 
 class NewClassViewController: UIViewController{
     
+    let newClassView = NewClassView()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.view = newClassView
+    }
 }

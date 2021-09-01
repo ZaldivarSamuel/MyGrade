@@ -20,6 +20,9 @@ class HomeViewController: UIViewController{
     }
        
     @objc func newClassButtonPressed(_ sender:UIButton!){
-        print("Button tapped")
+   
+        let newClassViewController = NewClassViewController()
+        
+        self.present(newClassViewController, animated: true, completion: nil)
     }
 }

@@ -15,6 +15,7 @@
 		7E3DBA4626DF29F000ACFA2F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA4526DF29F000ACFA2F /* HomeView.swift */; };
 		7E3DBA4826DFF55300ACFA2F /* NewClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA4726DFF55300ACFA2F /* NewClassViewController.swift */; };
 		7E3DBA4A26DFF57000ACFA2F /* NewClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA4926DFF57000ACFA2F /* NewClassView.swift */; };
+		7E3DBA4D26DFF71200ACFA2F /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA4C26DFF71200ACFA2F /* Class.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7E3DBA4526DF29F000ACFA2F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7E3DBA4726DFF55300ACFA2F /* NewClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClassViewController.swift; sourceTree = "<group>"; };
 		7E3DBA4926DFF57000ACFA2F /* NewClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClassView.swift; sourceTree = "<group>"; };
+		7E3DBA4C26DFF71200ACFA2F /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		7E3DBA2C26DF1F5C00ACFA2F /* MyGrade */ = {
 			isa = PBXGroup;
 			children = (
+				7E3DBA4B26DFF6F300ACFA2F /* Model */,
 				7E3DBA4426DF29DA00ACFA2F /* View Controllers */,
 				7E3DBA4326DF29D300ACFA2F /* Views */,
 				7E3DBA2D26DF1F5C00ACFA2F /* AppDelegate.swift */,
@@ -87,6 +90,14 @@
 				7E3DBA4726DFF55300ACFA2F /* NewClassViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7E3DBA4B26DFF6F300ACFA2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E3DBA4C26DFF71200ACFA2F /* Class.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 			files = (
 				7E3DBA2E26DF1F5C00ACFA2F /* AppDelegate.swift in Sources */,
 				7E3DBA4626DF29F000ACFA2F /* HomeView.swift in Sources */,
+				7E3DBA4D26DFF71200ACFA2F /* Class.swift in Sources */,
 				7E3DBA3026DF1F5C00ACFA2F /* SceneDelegate.swift in Sources */,
 				7E3DBA4226DF206300ACFA2F /* HomeViewController.swift in Sources */,
 				7E3DBA4A26DFF57000ACFA2F /* NewClassView.swift in Sources */,
