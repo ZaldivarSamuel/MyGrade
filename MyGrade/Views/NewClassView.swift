@@ -19,14 +19,19 @@ class NewClassView: UIView{
     
         self.addSubview(classInputTableView)
         
+        addConstraints()
+    }
+    
+    required init?(coder: NSCoder) { 
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    //MARK: - Constraints
+    func addConstraints(){
         classInputTableView.translatesAutoresizingMaskIntoConstraints = false
         classInputTableView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         classInputTableView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
         classInputTableView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         classInputTableView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 }
