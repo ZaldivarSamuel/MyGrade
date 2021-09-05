@@ -16,6 +16,7 @@ class NewClassView: UIView{
         let button = UIButton(frame: .zero)
         button.setTitle("Create Class", for: .normal)
         button.setTitleColor(.white, for: .normal)
+        button.setTitleColor(.gray, for: .highlighted)
         button.backgroundColor = .blue
         return button
     }()
