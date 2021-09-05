@@ -58,8 +58,14 @@ extension NewClassViewController: UITableViewDelegate, UITableViewDataSource{
     }
 }
 
+//MARK: - UITextField Delegate
 extension NewClassViewController: UITextFieldDelegate{
     func textFieldDidBeginEditing(_ textField: UITextField) {
         print("Typing")
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

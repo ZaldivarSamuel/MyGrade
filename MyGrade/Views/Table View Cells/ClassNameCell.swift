@@ -14,8 +14,9 @@ class ClassNameCell: UITableViewCell{
     let classNameTextField: UITextField = {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.backgroundColor = .red
+        textField.placeholder = "Class Name"
         textField.font = UIFont.systemFont(ofSize: 20)
+        textField.returnKeyType = .done
         return textField
     }()
     
@@ -30,10 +31,12 @@ class ClassNameCell: UITableViewCell{
     }
     
     func addUIElements(){
-        //self.addSubview(classNameTextField)
+
         self.contentView.addSubview(classNameTextField)
+        
+        //TODO: - Fix Constraints
         NSLayoutConstraint.activate([
-            classNameTextField.heightAnchor.constraint(equalToConstant: 40),
+
             classNameTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
             classNameTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
             classNameTextField.topAnchor.constraint(equalTo: topAnchor, constant: 8),
