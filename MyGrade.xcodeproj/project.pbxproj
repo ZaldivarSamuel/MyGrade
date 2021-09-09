@@ -20,6 +20,7 @@
 		7E3DBA7C26E477C200ACFA2F /* MyGrade.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA7A26E477C200ACFA2F /* MyGrade.xcdatamodeld */; };
 		7E3DBA8326E9AB4100ACFA2F /* TextFieldTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA8226E9AB4100ACFA2F /* TextFieldTags.swift */; };
 		7E3DBA8626EA85F000ACFA2F /* TableViewCellsIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA8526EA85F000ACFA2F /* TableViewCellsIdentifier.swift */; };
+		7E3DBA8826EA92B500ACFA2F /* ClassListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA8726EA92B500ACFA2F /* ClassListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		7E3DBA7B26E477C200ACFA2F /* MyGrade.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyGrade.xcdatamodel; sourceTree = "<group>"; };
 		7E3DBA8226E9AB4100ACFA2F /* TextFieldTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTags.swift; sourceTree = "<group>"; };
 		7E3DBA8526EA85F000ACFA2F /* TableViewCellsIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellsIdentifier.swift; sourceTree = "<group>"; };
+		7E3DBA8726EA92B500ACFA2F /* ClassListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				7E3DBA4F26E3122C00ACFA2F /* ClassNameCell.swift */,
+				7E3DBA8726EA92B500ACFA2F /* ClassListCell.swift */,
 			);
 			path = "Table View Cells";
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E3DBA8826EA92B500ACFA2F /* ClassListCell.swift in Sources */,
 				7E3DBA2E26DF1F5C00ACFA2F /* AppDelegate.swift in Sources */,
 				7E3DBA7C26E477C200ACFA2F /* MyGrade.xcdatamodeld in Sources */,
 				7E3DBA8326E9AB4100ACFA2F /* TextFieldTags.swift in Sources */,

@@ -98,7 +98,6 @@ extension NewClassViewController: UITextFieldDelegate{
   
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
         
         //Saves the text from a textfield to the correct ClassEntity data value
         if textField.tag == TextFieldTags.newClassTextField.rawValue{
@@ -106,6 +105,7 @@ extension NewClassViewController: UITextFieldDelegate{
             print(textField.text!)
             className = textField.text ?? ""
         }
+        textField.resignFirstResponder()
         
         return true
     }
