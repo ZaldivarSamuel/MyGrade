@@ -3,7 +3,13 @@
     <entity name="Class" representedClassName="Class" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="Entity" representedClassName="Entity" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Entity1" representedClassName="Entity1" syncable="YES" codeGenerationType="class"/>
     <elements>
         <element name="Class" positionX="-63" positionY="-18" width="128" height="44"/>
+        <element name="Entity" positionX="-54" positionY="0" width="128" height="44"/>
+        <element name="Entity1" positionX="-36" positionY="18" width="128" height="29"/>
     </elements>
 </model>

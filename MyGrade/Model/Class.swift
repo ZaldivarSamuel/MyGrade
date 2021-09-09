@@ -5,21 +5,26 @@
 //  Created by Samuel Zaldivar on 9/1/21.
 //
 
-import Foundation
+import UIKit
+import CoreData
 
-class Class{
+extension ClassEntity{
     
-    private var className = ""
+   
     
-    init(cn: String){
-        self.className = cn
+    public func test() -> Void{
+        print("This works")
     }
     
-    public func setClassName(cn: String) -> Void{
-        self.className = cn
-    }
-    
-    public func getClassName() -> String{
-        return self.className
+    public static func createClass(conext: NSManagedObjectContext, name: String) -> Void{
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let moc:NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+        
+        
+        
+        
+        let newClass = ClassEntity(context: moc)
+        newClass.name = name
+        appDelegate.saveContext()
     }
 }

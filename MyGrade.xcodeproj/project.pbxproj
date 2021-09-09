@@ -17,7 +17,7 @@
 		7E3DBA4A26DFF57000ACFA2F /* NewClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA4926DFF57000ACFA2F /* NewClassView.swift */; };
 		7E3DBA4D26DFF71200ACFA2F /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA4C26DFF71200ACFA2F /* Class.swift */; };
 		7E3DBA5026E3122C00ACFA2F /* ClassNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA4F26E3122C00ACFA2F /* ClassNameCell.swift */; };
-		7E3DBA7626E46CE500ACFA2F /* MyGrade.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA7426E46CE500ACFA2F /* MyGrade.xcdatamodeld */; };
+		7E3DBA7C26E477C200ACFA2F /* MyGrade.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA7A26E477C200ACFA2F /* MyGrade.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		7E3DBA4926DFF57000ACFA2F /* NewClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClassView.swift; sourceTree = "<group>"; };
 		7E3DBA4C26DFF71200ACFA2F /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
 		7E3DBA4F26E3122C00ACFA2F /* ClassNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassNameCell.swift; sourceTree = "<group>"; };
-		7E3DBA7526E46CE500ACFA2F /* MyGrade.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyGrade.xcdatamodel; sourceTree = "<group>"; };
+		7E3DBA7B26E477C200ACFA2F /* MyGrade.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyGrade.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 		7E3DBA2C26DF1F5C00ACFA2F /* MyGrade */ = {
 			isa = PBXGroup;
 			children = (
-				7E3DBA7426E46CE500ACFA2F /* MyGrade.xcdatamodeld */,
+				7E3DBA7A26E477C200ACFA2F /* MyGrade.xcdatamodeld */,
 				7E3DBA4B26DFF6F300ACFA2F /* Model */,
 				7E3DBA4426DF29DA00ACFA2F /* View Controllers */,
 				7E3DBA4326DF29D300ACFA2F /* Views */,
@@ -184,7 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E3DBA2E26DF1F5C00ACFA2F /* AppDelegate.swift in Sources */,
-				7E3DBA7626E46CE500ACFA2F /* MyGrade.xcdatamodeld in Sources */,
+				7E3DBA7C26E477C200ACFA2F /* MyGrade.xcdatamodeld in Sources */,
 				7E3DBA4626DF29F000ACFA2F /* HomeView.swift in Sources */,
 				7E3DBA4D26DFF71200ACFA2F /* Class.swift in Sources */,
 				7E3DBA3026DF1F5C00ACFA2F /* SceneDelegate.swift in Sources */,
@@ -387,14 +387,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7E3DBA7426E46CE500ACFA2F /* MyGrade.xcdatamodeld */ = {
+		7E3DBA7A26E477C200ACFA2F /* MyGrade.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				7E3DBA7526E46CE500ACFA2F /* MyGrade.xcdatamodel */,
+				7E3DBA7B26E477C200ACFA2F /* MyGrade.xcdatamodel */,
 			);
-			currentVersion = 7E3DBA7526E46CE500ACFA2F /* MyGrade.xcdatamodel */;
+			currentVersion = 7E3DBA7B26E477C200ACFA2F /* MyGrade.xcdatamodel */;
 			path = MyGrade.xcdatamodeld;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
