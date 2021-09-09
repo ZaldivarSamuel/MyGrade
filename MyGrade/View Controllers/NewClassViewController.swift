@@ -8,15 +8,26 @@
 import UIKit
 import CoreData
 
+/**
+ Contains the ViewController that allows the user to enter information for a new class and saves it
+ */
 class NewClassViewController: UIViewController{
     
+    ///The View
     let newClassView = NewClassView()
     
+    //MARK: - ClassEntity Values
+    
+    /// The class name
     private var className = ""
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        /*
+         View Setup
+         */
         
         self.view = newClassView
         self.title = "New Class"
@@ -41,12 +52,17 @@ class NewClassViewController: UIViewController{
     }
     
     //MARK: - Button Actions
+    
+    ///Dismiss ViewController
     @objc func cancelButtonPressed(){
         navigationController?.popViewController(animated: true)
 
         dismiss(animated: true, completion: nil)
     }
     
+    /**
+     When createClassButton is pressed, this function will start to create and save the class
+     */
     @objc func createClassButtonPressed(){
         
         ClassEntity.createClass(name: className)
@@ -79,16 +95,12 @@ extension NewClassViewController: UITableViewDelegate, UITableViewDataSource{
 
 //MARK: - UITextField Delegate
 extension NewClassViewController: UITextFieldDelegate{
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-   
-       
-        
-        
-    }
-    
+  
+
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
+        //Saves the text from a textfield to the correct ClassEntity data value
         if textField.tag == TextFieldTags.newClassTextField.rawValue{
             print("Typing Class Name")
             print(textField.text!)
