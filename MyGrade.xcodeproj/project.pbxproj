@@ -18,6 +18,7 @@
 		7E3DBA4D26DFF71200ACFA2F /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA4C26DFF71200ACFA2F /* Class.swift */; };
 		7E3DBA5026E3122C00ACFA2F /* ClassNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA4F26E3122C00ACFA2F /* ClassNameCell.swift */; };
 		7E3DBA7C26E477C200ACFA2F /* MyGrade.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA7A26E477C200ACFA2F /* MyGrade.xcdatamodeld */; };
+		7E3DBA8326E9AB4100ACFA2F /* TextFieldTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3DBA8226E9AB4100ACFA2F /* TextFieldTags.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		7E3DBA4C26DFF71200ACFA2F /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
 		7E3DBA4F26E3122C00ACFA2F /* ClassNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassNameCell.swift; sourceTree = "<group>"; };
 		7E3DBA7B26E477C200ACFA2F /* MyGrade.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyGrade.xcdatamodel; sourceTree = "<group>"; };
+		7E3DBA8226E9AB4100ACFA2F /* TextFieldTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTags.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		7E3DBA2C26DF1F5C00ACFA2F /* MyGrade */ = {
 			isa = PBXGroup;
 			children = (
+				7E3DBA8126E9AB2E00ACFA2F /* Enums */,
 				7E3DBA7A26E477C200ACFA2F /* MyGrade.xcdatamodeld */,
 				7E3DBA4B26DFF6F300ACFA2F /* Model */,
 				7E3DBA4426DF29DA00ACFA2F /* View Controllers */,
@@ -112,6 +115,14 @@
 				7E3DBA4F26E3122C00ACFA2F /* ClassNameCell.swift */,
 			);
 			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		7E3DBA8126E9AB2E00ACFA2F /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				7E3DBA8226E9AB4100ACFA2F /* TextFieldTags.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 			files = (
 				7E3DBA2E26DF1F5C00ACFA2F /* AppDelegate.swift in Sources */,
 				7E3DBA7C26E477C200ACFA2F /* MyGrade.xcdatamodeld in Sources */,
+				7E3DBA8326E9AB4100ACFA2F /* TextFieldTags.swift in Sources */,
 				7E3DBA4626DF29F000ACFA2F /* HomeView.swift in Sources */,
 				7E3DBA4D26DFF71200ACFA2F /* Class.swift in Sources */,
 				7E3DBA3026DF1F5C00ACFA2F /* SceneDelegate.swift in Sources */,

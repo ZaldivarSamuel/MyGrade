@@ -12,15 +12,32 @@ class NewClassViewController: UIViewController{
     
     let newClassView = NewClassView()
     
-    var moc:NSManagedObjectContext!
-    let appDelegate = UIApplication.shared.delegate as? AppDelegate
+    private var className = ""
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        moc = appDelegate?.persistentContainer.viewContext
         
         self.view = newClassView
         self.title = "New Class"
+        
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                let moc:NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+                let dataRequeest:NSFetchRequest<ClassEntity> = ClassEntity.fetchRequest()
+                do {
+                    let tests = try moc.fetch(dataRequeest)
+                    for t in tests{
+               
+                        print(t.name)
+//                        moc.delete(t)
+//                        appDelegate.saveContext()
+                    }
+
+                        //try print(moc.fetch(dataRequeest))
+                   }catch {
+                       print("Could not load data")
+                   }
         
         /*
          Buttons Setup
@@ -38,24 +55,6 @@ class NewClassViewController: UIViewController{
         
         newClassView.classInputTableView.delegate = self
         newClassView.classInputTableView.dataSource = self
-        
-//        let i = ClassEntity(context: moc)
-//        i.name = "Test2"
-//        appDelegate?.saveContext()
-//
-//
-        let dataRequeest:NSFetchRequest<ClassEntity> = ClassEntity.fetchRequest()
-        do {
-            let tests = try moc.fetch(dataRequeest)
-            for t in tests{
-                t.test()
-                print(t.name)
-            }
-
-                //try print(moc.fetch(dataRequeest))
-           }catch {
-               print("Could not load data")
-           }
 
     }
     
@@ -67,8 +66,8 @@ class NewClassViewController: UIViewController{
     }
     
     @objc func createClassButtonPressed(){
-        print("Pressed")
-        ClassEntity.createClass(conext: moc, name: "Button Pressed")
+        
+        ClassEntity.createClass(name: className)
     }
 }
 
@@ -99,11 +98,21 @@ extension NewClassViewController: UITableViewDelegate, UITableViewDataSource{
 //MARK: - UITextField Delegate
 extension NewClassViewController: UITextFieldDelegate{
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        print("Typing")
+   
+       
+        
+        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        
+        if textField.tag == TextFieldTags.newClassTextField.rawValue{
+            print("Typing Class Name")
+            print(textField.text!)
+            className = textField.text ?? ""
+        }
+        
         return true
     }
 }

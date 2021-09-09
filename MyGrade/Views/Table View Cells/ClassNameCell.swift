@@ -17,6 +17,7 @@ class ClassNameCell: UITableViewCell{
         textField.placeholder = "Class Name"
         textField.font = UIFont.systemFont(ofSize: 20)
         textField.returnKeyType = .done
+        textField.tag = (TextFieldTags.newClassTextField).rawValue
         return textField
     }()
     
