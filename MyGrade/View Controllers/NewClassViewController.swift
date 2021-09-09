@@ -21,24 +21,6 @@ class NewClassViewController: UIViewController{
         self.view = newClassView
         self.title = "New Class"
         
-        
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-                let moc:NSManagedObjectContext = appDelegate.persistentContainer.viewContext
-                let dataRequeest:NSFetchRequest<ClassEntity> = ClassEntity.fetchRequest()
-                do {
-                    let tests = try moc.fetch(dataRequeest)
-                    for t in tests{
-               
-                        print(t.name)
-//                        moc.delete(t)
-//                        appDelegate.saveContext()
-                    }
-
-                        //try print(moc.fetch(dataRequeest))
-                   }catch {
-                       print("Could not load data")
-                   }
-        
         /*
          Buttons Setup
          */
