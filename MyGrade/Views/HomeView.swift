@@ -10,7 +10,8 @@ import UIKit
 
 class HomeView: UIView{
     
-    let newClassButton = UIButton(frame: .zero)
+    let classListTableView = UITableView(frame: CGRect.zero)
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -20,20 +21,16 @@ class HomeView: UIView{
     private func createUI(){
         self.backgroundColor = .white
         
-        newClassButton.setTitle("New Class", for: .normal)
-        newClassButton.setTitleColor(.systemBlue, for: .normal)
-        newClassButton.setTitleColor(.systemFill, for: .highlighted)
-    
-        self.addSubview(newClassButton)
+        self.addSubview(classListTableView)
         setConstraints()
     }
     
     private func setConstraints(){
-        newClassButton.translatesAutoresizingMaskIntoConstraints = false
-        newClassButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        newClassButton.heightAnchor.constraint(equalToConstant: 75).isActive = true
-        newClassButton.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        newClassButton.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        classListTableView.translatesAutoresizingMaskIntoConstraints = false
+        classListTableView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        classListTableView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        classListTableView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        classListTableView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor).isActive = true
     }
     
     required init?(coder: NSCoder) {

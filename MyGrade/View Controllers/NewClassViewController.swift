@@ -44,7 +44,7 @@ class NewClassViewController: UIViewController{
         /*
          Table View Setup
          */
-        newClassView.classInputTableView.register(ClassNameCell.self, forCellReuseIdentifier: "class-name-cell")
+        newClassView.classInputTableView.register(ClassNameCell.self, forCellReuseIdentifier: TableViewCellsIdentifier.newClassNameCell.rawValue)
         
         newClassView.classInputTableView.delegate = self
         newClassView.classInputTableView.dataSource = self
@@ -78,7 +78,7 @@ extension NewClassViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "class-name-cell", for: indexPath) as! ClassNameCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCellsIdentifier.newClassNameCell.rawValue, for: indexPath) as! ClassNameCell
         cell.classNameTextField.delegate = self
         cell.selectionStyle = .none
         return cell
