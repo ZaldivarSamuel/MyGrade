@@ -66,6 +66,11 @@ class NewClassViewController: UIViewController{
     @objc func createClassButtonPressed(){
         
         ClassEntity.createClass(name: className)
+        NotificationCenter.default.post(name: .createdClass, object: nil)
+        
+        navigationController?.popViewController(animated: true)
+
+        dismiss(animated: true, completion: nil)
     }
 }
 

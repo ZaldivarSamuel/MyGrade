@@ -12,15 +12,17 @@ import CoreData
 class HomeViewController: UIViewController{
     
     var classes : [ClassEntity] = []
+    let homeView = HomeView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getClasses()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(getClasses), name: .createdClass, object: nil)
+        
         self.title = "My Grade"
         navigationController?.navigationBar.prefersLargeTitles = true
 
-        let homeView = HomeView()
         self.view = homeView
         
         let button1 =  UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(newClassButtonPressed(_:)))
@@ -33,31 +35,28 @@ class HomeViewController: UIViewController{
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        print("Appear")
-    }
-    
-    private func getClasses(){
+     @objc func getClasses(){
+        
+        classes.removeAll()
+        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let moc:NSManagedObjectContext = appDelegate.persistentContainer.viewContext
         let dataRequeest:NSFetchRequest<ClassEntity> = ClassEntity.fetchRequest()
-                do {
-                    let tests = try moc.fetch(dataRequeest)
-                    for t in tests{
-                        classes.append(t)
-                       print(t.name)
-//                        moc.delete(t)
-//                        appDelegate.saveContext()
-                    }
-
-                        //try print(moc.fetch(dataRequeest))
-                   }catch {
-                       print("Could not load data")
-                   }
+        do {
+            let tests = try moc.fetch(dataRequeest)
+                for t in tests{
+                    classes.append(t)
+                }
+        }
+        catch {
+            print("Could not load data")
+        }
+        
+        homeView.classListTableView.reloadData()
     }
     
  
-       
+    //TODO: Do not create class when class name is empty
     @objc func newClassButtonPressed(_ sender:UIBarButtonItem!){
    
         let newClassViewController = NewClassViewController()
